@@ -83,8 +83,6 @@
 
   header ul li:last-child a:hover::before {
           transform: scaleX(0); 
-          /* the underline transition was removed fron the order-now
-            list(li) using this feature*/
   }
 
   .btn    {
@@ -204,56 +202,11 @@
       height: 100%;
       width: 100%;
       object-fit: cover;
+      overflow: hidden;
   }
   
-      /* otherwise visible
-  
-  THIS FEATURE IS FOR box-shadow effect in front of 
-  the squared box-1 housing the first duvet. 
-  unfortunately, my picture doesnt need overflow: vivible, 
-  hence the overflow is hidden and so is all these features.
-  
-  .img-box-1::before {
-      content: '';
-      position: absolute;
-      top: -5%;
-      left: -5%;
-      width: 100%;
-      height: 100%;
-      background: #fae7fb;
-      border-radius: 150px 25px;
-      z-index: -1;
-}
-  
-  THIS FEATURE IS FOR box-shadow effect behind 
-  the squared box-1 housing the first duvet. 
-  unfortunately, my picture doesnt need overflow: vivible, 
-  hence the overflow is hidden and so is all these features.
-  
-  .img-box-1::after {
-      content: '';
-      position: absolute;
-      top: 5%;
-      left: 5%;
-      width: 100%;
-      height: 100%;
-      background: #fae7fb;
-      border-radius: 150px 25px;
-      z-index: -1;
-}
-
-  
-  .img-box-1 img  {
-      left: -30%;
-      width: 120%;
-      bottom: 0;
-    }
-    THIS FEATURE IS USED TO BRING IMAGE OUTSIDE OF 
-    ITS CONTAINER. overflow MUST BE VISIBLE AND NOT HIDDEN.
-    */
-
-
-  .img-box-buy   {
+    
+   .img-box-buy   {
         position: relative;
         width: 50px;
         height: 50px;
@@ -270,63 +223,6 @@
       box-shadow: 0 5px 10px 0 rgba(106, 40, 253, .4);
   }
   
-.card-xs    {
-    position: absolute;
-    left: 0.3%;
-    bottom: 0.3%;
-    width: 180px;
-    background: #fff;
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 40px 25px;
-    padding-bottom: 10px;
-}
-
-.img-box-xs   {
-    position: relative;
-    width: 100%;
-    height: 100px;
-    overflow: hidden;
-    /*border: 2px solid transparent; didnt blend with my design */
-    border-radius: 40px 25px;
-    background: #311764;
-}
-
-.img-box-xs img {
-    left:0;
-    width: 100%;
-}
-
-.card-xs h5   {
-    margin: 0 10px;
-    color: #311764;
-}
-
-.btn-box-xs {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 1px;
-}
-
-.img-box-xxs  {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    overflow: visible;
-}
-
-.img-box-xxs img  {
-  position: absolute;
-  top: 0;
-  width: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 /* popular products start here*/
 .img-box-rocket   {
     position: relative;
@@ -510,9 +406,9 @@
     color: red;
 }
 
-/* Laundry services, and other services starts here*/
+/* Laundry services, and brief about starts here*/
 
-.safety {
+.laundry {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -520,13 +416,13 @@
     padding: 50px 100px;
 }
 
-.safety .img-box-small  {
+.laundry .img-box-small  {
     position: relative;
     height: 80px;
     width: 80px;
 }
 
-.safety .img-box-medium {
+.laundry .img-box-medium {
     position: relative;
     width: 50%;
     height: 410px;
@@ -535,34 +431,7 @@
     overflow: hidden;
 }
 
-/*
-.safety .img-box-medium::before{
-    content: '';
-    position: absolute;
-    top: 5%;
-    left: -5%;
-    width: 100%;
-    height: 100%;
-    background: #fce1fd;
-    border-radius: 25px 150px;
-    z-index: -1;
-}
-
-
-.safety .img-box-medium::after{
-    content: '';
-    position: absolute;
-    top: -5%;
-    left: 5%;
-    width: 100%;
-    height: 100%;
-    background: #fce1fd;
-    border-radius: 25px 150px;
-    z-index: -1;
-}
-*/
-
-.safety .img-box-medium img {
+.laundry .img-box-medium img {
     height: 100%;
     width: 100%;
     object-fit: fill;
@@ -617,9 +486,9 @@
                 text-decoration-thickness: 6px;
 }
 
-/* grow/ services starts here*/
+/*services starts here*/
 
-.grow {
+.laundry-services {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
