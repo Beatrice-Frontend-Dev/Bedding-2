@@ -687,6 +687,7 @@ font-family: poppins, sans-serif;
 section    {
 padding: 60px;
  width: 100%;
+ border: 2px solid red;
 }
 
 header{
