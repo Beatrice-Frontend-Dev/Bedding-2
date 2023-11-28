@@ -677,7 +677,7 @@ footer a {
 /*Global css for mobile screen*/
 
 @media screen and (max-width: 600px) {
-body{
+* {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
@@ -685,9 +685,8 @@ font-family: poppins, sans-serif;
 }
 
 section    {
-padding: 60px;
+padding: 60px 0;
  width: 100%;
- border: 2px solid red;
 }
 
 header{
@@ -698,7 +697,7 @@ padding: 30px 20px;
 
 header.sticky {
 background: #fff;
-padding: 30px 60px;
+padding: 30px 20px;
 box-shadow: 0 5px 20px rgba(0, 0 ,0 ,0.05);
 }
 
