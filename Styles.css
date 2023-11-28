@@ -676,7 +676,7 @@ footer a {
 
 /*Global css for mobile screen*/
 
-@media screen and (min-width: 321px) and (max-width: 650px) {
+@media screen and (min-width: 321px) and (max-width: 600px) {
 body{
 margin: 0;
 padding: 0;
@@ -686,12 +686,13 @@ font-family: poppins, sans-serif;
 
 section    {
 padding: 60px;
+ width: 100%;
 }
 
 header{
 flex-direction: column;
 align-items: flex-start;
-padding: 30px 60px;
+padding: 30px 20px;
 }
 
 header.sticky {
@@ -719,7 +720,7 @@ order: 1;
 
 .home {
 flex-direction: column;
-padding-top: 170px;
+padding-top: 200px;
 } 
 
 .home-content {
@@ -745,7 +746,7 @@ width: 100%;
 }  
 
 .img-box-1 {
-min-width: 550px;
+min-width: 500px;
 height: 450px;
 }
 
@@ -756,7 +757,13 @@ width: 100%;
 
 .popular {
 padding: 60px 40px;
+ width: 100%;
 }
+
+ .img-box-rocket{
+  width: 159px;
+  height: 145px;
+ }
 
 .title {
 width: 100%;
@@ -821,7 +828,7 @@ overflow: hidden;
 width: 40%;
 }    
 
-.card-color h4,m
+.card-color h4,
 .card-color h5  {
 color: black;
 }
@@ -834,6 +841,7 @@ color: white;
 .laundry {
 flex-direction: column;
 padding: 10px;
+ width: 100%;
 } 
 
 .content {
@@ -848,7 +856,7 @@ margin-bottom: 15px;
 
 
 .img-box-medium {
-min-width: 550px;
+min-width: 480px;
 height: 450px;
 }
 
@@ -877,10 +885,10 @@ padding: 0 10px;
 .content p::before  {
 content: '';
 position: absolute;
-top: 33%;
+top: 15%;
 left: 8%;
-width: 40%;
-height: 46%;
+width: 100%;
+height: 60%;
 background: #faf4ff;
 border-radius: 10px 50px;
 z-index: -1;
@@ -890,6 +898,7 @@ z-index: -1;
 .laundry-services {
 flex-direction: column;
 padding: 10px;
+ width: 100%;
 } 
 
 .contents {
@@ -906,6 +915,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 10px;
+ width: 100%;
 } 
 
 .description {
