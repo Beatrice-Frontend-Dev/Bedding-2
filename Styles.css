@@ -224,6 +224,7 @@
   }
   
 /* popular products start here*/
+
 .img-box-rocket   {
     position: relative;
     width: 130px;
@@ -672,3 +673,259 @@ footer a {
      transform: scaleX(1);
      transform-origin: bottom left;
 }
+
+/*Global css for mobile screen*/
+
+@media screen and (min-width: 321px) and (max-width: 650px) {
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: poppins, sans-serif;
+}
+
+section    {
+padding: 60px;
+}
+
+header{
+flex-direction: column;
+align-items: flex-start;
+padding: 30px 60px;
+}
+
+header.sticky {
+background: #fff;
+padding: 30px 60px;
+box-shadow: 0 5px 20px rgba(0, 0 ,0 ,0.05);
+}
+
+header ul li a {
+margin-left: -5px;
+padding: 8px 18px;
+}
+.buttn {margin-left: 17px;
+padding: 8px 18px;
+}   
+
+.logo {
+margin-bottom: 10px;
+order: 0;
+}
+
+.navigation {
+order: 1;
+}   
+
+.home {
+flex-direction: column;
+padding-top: 170px;
+} 
+
+.home-content {
+flex: 1;
+width: 100%;
+padding-bottom: 25px;
+} 
+
+.home-content h5{
+font-size: 1rem;
+}  
+
+.home-content h1{
+font-size: 2rem;
+width: 70%;
+}  
+
+
+.home-content p{
+font-size: 1.1rem;
+text-wrap: wrap;
+width: 100%;
+}  
+
+.img-box-1 {
+min-width: 550px;
+height: 450px;
+}
+
+.img-box-1 img {
+flex: 1;
+width: 100%;
+}
+
+.popular {
+padding: 60px 40px;
+}
+
+.title {
+width: 100%;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.cards {
+position: relative;
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+
+
+
+
+.cards::before,
+.cards::after {
+content: none;
+}
+
+.trending-box {
+width: 100%;
+flex: 1;
+height: auto;
+padding: 80px;
+}  
+
+.card {
+width: 100%;
+flex: 1;
+margin-bottom: 75px;
+opacity: 1;
+border-radius: 10px 20px 0 0;
+transform: none;
+transition: none
+}   
+
+.card h4    {
+padding: 10px;
+color: #ffe3ec;
+font-size: 2rem;
+}
+
+.card p    {
+padding-left: 10px;
+color: #999;
+font-size: 1.3rem;
+}
+
+.img-box-popular {
+position: relative;
+width: 100%;
+height: 320px;
+border: 2px solid transparent;
+border-radius: 10px 30px 10px 10px;
+overflow: hidden; 
+}  
+
+.btn-normal {
+width: 40%;
+}    
+
+.card-color h4,m
+.card-color h5  {
+color: black;
+}
+
+.card-color .btn-normal:hover{
+background-color: black;
+color: white;
+}
+
+.laundry {
+flex-direction: column;
+padding: 10px;
+} 
+
+.content {
+flex: 1;
+width: 90%;
+padding-bottom: 25px;
+align-items: center;
+padding-left: 10px;
+margin-left: 55px;
+margin-bottom: 15px;
+}
+
+
+.img-box-medium {
+min-width: 550px;
+height: 450px;
+}
+
+.img-box-medium img {
+flex: 1;
+width: 100%;
+}
+
+.img-box-small{
+margin: auto;
+}   
+
+.content h2{
+margin: 16px 0;
+font-size: 2.3rem;
+text-align: center;
+}
+
+.content p  {
+font-size: 1.3rem;
+line-height: 25px;
+text-wrap: wrap;
+padding: 0 10px;
+}
+
+.content p::before  {
+content: '';
+position: absolute;
+top: 33%;
+left: 8%;
+width: 40%;
+height: 46%;
+background: #faf4ff;
+border-radius: 10px 50px;
+z-index: -1;
+}
+
+
+.laundry-services {
+flex-direction: column;
+padding: 10px;
+} 
+
+.contents {
+flex: 1;
+width: 90%;
+padding: 10px;
+margin-bottom: 25px;
+border: 2px solid #ccc;
+} 
+
+
+.contact {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10px;
+} 
+
+.description {
+flex: 1;
+width: 90%;
+padding: 10px;
+margin-bottom: 25px;
+} 
+
+.get-in-touch {
+flex: 1;
+width: 90%;
+padding: 10px;
+margin-bottom: 25px;
+} 
+
+.newsletter {
+flex: 1;
+width: 90%;
+padding: 10px;
+margin-bottom: 25px;
+} 
+}   
